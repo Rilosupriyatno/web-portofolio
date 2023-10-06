@@ -1,0 +1,44 @@
+.container.awards_container {
+  width: 40%;
+  padding-bottom: 4rem;
+}
+.avatar {
+  width: 100%;
+  aspect-ratio: 1/0;
+  overflow: hidden;
+  border-radius: 10%;
+  margin: 0 auto 1rem;
+}
+.award {
+  background: var(--color-bg-variant);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  user-select: none;
+}
+.review {
+  color: var(--color-light);
+  font-weight: 300;
+  display: block;
+  width: 80%;
+  margin: 0.8rem auto 0;
+}
+/* Ambile lewat inspect element */
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: var(--color-primary);
+}
+/* ************* Media Query (Medium Device) ************* */
+@media screen and (max-width: 1024px) {
+  .container.awards_container {
+    width: 60%;
+  }
+}
+/* ************* Media Query (Small Device) ************* */
+@media screen and (max-width: 600px) {
+  .container.awards_container {
+    width: var(--container-width-sm);
+  }
+  .review {
+    width: var(--container-width-sm);
+  }
+}
