@@ -34,7 +34,7 @@ const PortApp = () => {
                 <img src={image} alt={title} />
               </div>
               <h3>{title}</h3>
-              <h4>{desc}</h4>
+              <h4 className="desc">{desc}</h4>
               <div className="portApp_item-cta">
                 <a href={github} className="btn" target="blank">
                   Github
