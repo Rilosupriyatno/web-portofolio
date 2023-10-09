@@ -2,7 +2,7 @@
   width: 40%;
   padding-bottom: 4rem;
 }
-.avatar {
+.img {
   width: 100%;
   aspect-ratio: 1/0;
   overflow: hidden;
@@ -12,7 +12,7 @@
 .award {
   background: var(--color-bg-variant);
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 2rem;
   user-select: none;
 }

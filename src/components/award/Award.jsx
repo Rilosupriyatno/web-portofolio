@@ -1,7 +1,11 @@
 import React from "react";
 import "./award.css";
-import AVTR1 from "../../assets/MOS.jpg";
-import AVTR2 from "../../assets/Data.jpg";
+import img1 from "../../assets/MOS.png";
+import img2 from "../../assets/Data.png";
+import img3 from "../../assets/Harisenin-1.png";
+import img4 from "../../assets/cp.png";
+import img5 from "../../assets/pdpb 2.png";
+import img6 from "../../assets/pdpb 1.png";
 
 // import Swiper core and required modules
 import { Pagination } from "swiper";
@@ -14,12 +18,28 @@ import "swiper/css/pagination";
 
 const data = [
   {
-    avatar: AVTR1,
+    img: img1,
     name: "Microsoft Office Specialist",
   },
   {
-    avatar: AVTR2,
+    img: img2,
     name: "Data Engineer",
+  },
+  {
+    img: img3,
+    name: "Fullstack Web Developer",
+  },
+  {
+    img: img4,
+    name: "Prakerja",
+  },
+  {
+    img: img5,
+    name: "Introduction to Data Science with Python",
+  },
+  {
+    img: img6,
+    name: "Python for Data Professional Beginer - Part 1",
   },
 ];
 
@@ -37,11 +57,11 @@ const Award = () => {
         slidesPerView={1}
         pagination={{ clickable: true }}
       >
-        {data.map(({ avatar, name }, index) => {
+        {data.map(({ img, name }, index) => {
           return (
             <SwiperSlide key={index} className="award">
-              <div className="avatar">
-                <img src={avatar} alt="" />
+              <div className="img">
+                <img src={img} alt="" />
               </div>
               <div className="name">
                 <h5 className="ame">{name}</h5>
